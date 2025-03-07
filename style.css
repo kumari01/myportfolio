@@ -69,7 +69,7 @@ span
 {
     padding:5px 10px;
     background-color: white;
-    color:black;
+    color:white;
     border-radius: 8px;
     border:2px solid transparent;
     font-size: 15px;
@@ -79,10 +79,10 @@ span
 }
 .Contact-btn:hover
 {
-    background-color: var(--primary-color);
+    background-color: white;
     transition: 0.3s ease-in;
     box-shadow: 0 0 25px var(--primary-color);
-    color:white;
+    color:var(--primary-color);
 }
 /*hero section*/
 .hero
