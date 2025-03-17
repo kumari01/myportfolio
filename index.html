@@ -11,16 +11,17 @@
 <body>
     <header class="header">
         <a href="#" class="logo"><span>Port</span>folio</a>
-        <nav class="navbar">
-            <!-- <a href="#portfolio" class="active">Portfolio</a> -->
-            <a href="#home" class = "active">Home</a>
+        <nav class="navbar" id="nav-menu">
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">Skills</a> 
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
         </nav>
-        <a href="#contact" class="Contact-btn">Contact Me</a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -59,11 +60,11 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Skill Section -->
     <section class="skills" id="skills">
         <h2 class="skill-heading">My<span> Skills</span></h2>
-        <div class="tech-skill-sec">
-            <div class="container1" id="myskills">
+        <div class="skill-sec">
+            <div class="container1 conatiner" id="myskills">
                 <h1 class="tech-heading">Technical Skills</h1>
                 <div class="technical-bars">
                     <div class="bar">
@@ -102,18 +103,9 @@
                             <span></span>
                         </div>
                     </div>
-                    <!-- <div class="bar">
-                        <i class="fa-brands fa-react"></i>
-                        <div class="info">
-                            <span class="subhead">React</span>
-                        </div>
-                        <div class="progress-line react">
-                            <span></span>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-            <div class="container1 prof-sec">
+            <div class="container2 container prof-sec">
                 <h1 class="tech-heading">Professional Skills</h1>
                 <div class="circular-bars">
                     <div class="progress" style="--progress: 28;">
@@ -154,7 +146,7 @@
     </section>
     <!-- Projects Section -->
     <section class="project-sec" id="projects">
-        <h4 class="project-heading">Projects</h4>
+        <h4 class="project-heading"><span>My </span>Projects</h4>
         <div class="projects-container">
             <div class="project">
                 <div class="image">
@@ -179,7 +171,7 @@
                         </a>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="project">
                 <div class="image">
                     <img class="prj3" src="https://raw.githubusercontent.com/kumari01/portfolio-img/main/weather.png" alt="Weather Image">
@@ -236,24 +228,25 @@
         <div class="contact">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="880bc35b-c745-449e-ac6b-e3d3a70d1fc1">
-                
-                <label>Name</label><br>
-                <input type="text" name="name" placeholder="Enter Your Name" required><br>
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
 
-                <label>Email</label><br>
-                <input type="email" name="email" placeholder="@gmail.com" required><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="@gmail.com" required>
 
-                <label>Contact</label><br>
-                <input type="text" name="contact" placeholder="Contact No:" required><br>
+                <label>Contact</label>
+                <input type="text" name="contact" placeholder="Contact No:" required>
 
-                <label>Suggestion</label><br>
-                <textarea name="suggestion" placeholder="Suggestion" required></textarea><br>
+                <label>Suggestion</label>
+                <textarea name="suggestion" placeholder="Suggestion" required></textarea>
 
                 <input type="submit" value="Submit">
             </form>
         </div>
     </section>
-
+    <footer>
+        &copy 2025 Gadi Kumari. All rights reserved.
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src = "script.js"></script>
 </body>
