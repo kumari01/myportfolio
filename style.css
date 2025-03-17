@@ -323,14 +323,6 @@ span {
 .about-content a{
     color: white;
 }
-
-.btn1:hover {
-    background-color: white;
-    box-shadow: 0 0 10px var(--primary-color);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .about {
